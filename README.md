@@ -15,13 +15,12 @@ Compléter les quelques exercices suivants en modifiant le code de [exercice.py]
 
 3. Créer un programme qui trouve l’index de la valeur la plus proche d’un nombre fournit dans un array.
 
-4. Créer un graphique de y=𝑥^2  sin⁡(1∕𝑥^2 )+𝑥 dans l’intervalle [-1, 1] avec 250 points.
+4. Créer un graphique de ![alt text](./assets/eq1.gif) dans l’intervalle [-1, 1] avec 250 points.
 
-5.Créer un programme qui estime la valeur de pi avec laméthode de Monte-Carlo. Afficher le résultat ci-bas.
+5. Créer un programme qui estime la valeur de pi avec la méthode de Monte-Carlo. Afficher le résultat ci-bas.
 
-![alt text](./img.png)
+![alt text](./assets/img.png)
 
 **Rappel mathématique**: Le rayon d'un cercle est pi. L'aire d'un demi cercle est pi/4.
 
-6. Évaluer l’intégrale ![alt text](./eq1.gif)∫_(−∞)^∞ 𝑒^(−𝑥^2) 𝑑𝑥. Afficher dans un graphique ∫𝑒^(−𝑥^2) 𝑑𝑥 pour x = [-4, 4].
-
+6. Évaluer l’intégrale ![alt text](./assets/eq2.gif). Afficher dans un graphique ![alt text](./assets/eq3.gif) pour x = [-4, 4].

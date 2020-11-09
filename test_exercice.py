@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import math
 import os
 import sys
 import unittest
 
 import numpy as np
-from cmath import polar
 
 import exercice
 
@@ -25,13 +23,13 @@ class TestExercice(unittest.TestCase):
     def test_coordinates(self):
         cartesian_coordinates = np.array([(0, 0), (10, 10), (2, -1)])
         
-        output = list(exercice.coordinate_conversion(cartesian_coordinates))
-        answer = [polar(coord) for coord in cartesian_coordinates]
+        output = exercice.coordinate_conversion(cartesian_coordinates)
+        answer = np.array([(np.sqrt(c[0] ** 2 + c[1] ** 2), np.arctan2(c[1], c[0])) for c in cartesian_coordinates])
 
-        self.assertEqual(
+        np.testing.assert_array_equal(
             output,
             answer,
-            'Retrait du mauvais caractère'
+            'Mauvaise réponse'
         )
 
     def test_closest(self):
